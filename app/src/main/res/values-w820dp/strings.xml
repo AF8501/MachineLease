@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tx_search_hint">请输入机械类型</string>
+    <string name="hotSearch">热门搜索</string>
+</resources>

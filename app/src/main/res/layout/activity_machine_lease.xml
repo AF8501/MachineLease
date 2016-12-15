@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="14dp">
+        <include layout="@layout/content_toolbar"></include>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#fafafa">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tx_matching_num"
+                android:layout_centerInParent="true"
+                android:textSize="12sp"
+                android:textAlignment="center"
+                android:textColor="#999999"
+                android:text="匹配设备数：" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp"
+                    android:orientation="vertical">
+                    <include layout="@layout/item_equitment_type"></include>
+                    <include layout="@layout/item_brand_model"></include>
+                    <include layout="@layout/item_specl"></include>
+                    <include layout="@layout/item_factory_type"></include>
+                    <include layout="@layout/item_counts"></include>
+                    <include layout="@layout/item_latest_time"></include>
+                    <include layout="@layout/item_project_duration"></include>
+                    <include layout="@layout/item_city"></include>
+                    <include layout="@layout/item_project_address"></include>
+                    <include layout="@layout/item_project_description"></include>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="14dp"
+                    android:orientation="vertical">
+                    <include layout="@layout/item_specail_request"></include>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp"
+                    android:orientation="vertical">
+                    <include layout="@layout/item_isprovide_food"></include>
+                    <include layout="@layout/item_isprovide_oil"></include>
+                    <include layout="@layout/item_freight"></include>
+                    <include layout="@layout/item_price"></include>
+                    <include layout="@layout/item_wayofpayment"></include>
+                    <include layout="@layout/item_contacts"></include>
+                    <include layout="@layout/item_phone"></include>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="53.3dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <!--<include layout="@layout/item_preview_contract"></include>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="87.3dp"
+        android:id="@+id/rl_item_preview_contract"
+        android:paddingTop="26.7dp"
+        android:paddingBottom="14dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:background="@drawable/btn_post_contracts_background"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="46.7dp"
+            android:id="@+id/btn_item_preview_contract"
+            android:text="预览合约"
+            android:textAlignment = "center"
+            android:background = "@drawable/btn_preview_contracts"
+            android:textSize = "16sp"
+            android:textStyle = "bold"
+            android:textColor = "#fffeff"
+            android:textAppearance = "?android:attr/textAppearanceMedium"
+            style="?android:attr/borderlessButtonStyle"/>
+    </RelativeLayout>
+</RelativeLayout>

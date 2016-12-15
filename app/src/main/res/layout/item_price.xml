@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="53.3dp"
+    android:background="@color/white"
+    android:id="@+id/rl_item_price">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tx_item_price_name"
+        android:layout_centerVertical="true"
+        android:text="价格"
+        android:textColor="@color/machine_lease_listitem_name"
+        android:textSize="@dimen/machine_lease_listitem" />
+    <RelativeLayout
+        android:layout_width="66.7dp"
+        android:layout_height="match_parent"
+        android:id="@+id/rl_item_price_spinner_container"
+        android:layout_alignParentRight="true"
+        android:background="#f5f5f5">
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/sp_item_price"
+            android:background="@null"
+            android:popupBackground="#f5f5f5"
+            android:popupElevation="0dp"/>
+        <ImageView
+            android:layout_width="13.3dp"
+            android:layout_height="match_parent"
+            android:id="@+id/iv_item_price_arrow"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="4dp"
+            android:src="@drawable/icon_arrow_gray_down"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tx_item_price_unit"
+        android:text="元"
+        android:layout_toLeftOf="@id/rl_item_price_spinner_container"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="4dp"
+        android:textSize="@dimen/machine_lease_listitem"
+        android:textColor="@color/machine_lease_listitem_content"
+        android:visibility="gone"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_item_price_content"
+        android:paddingRight="8dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/tx_item_price_unit"
+        android:layout_marginRight="1dp"
+        android:hint="建议参考价格800元"
+        android:textColorHint="@color/machine_lease_listitem_content"
+        android:textColor="@color/machine_lease_listitem_content"
+        android:textSize="@dimen/machine_lease_listitem"
+        android:gravity="right"
+        android:inputType="numberDecimal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#d9d9d9"
+        android:layout_alignParentBottom="true">
+    </LinearLayout>
+</RelativeLayout>

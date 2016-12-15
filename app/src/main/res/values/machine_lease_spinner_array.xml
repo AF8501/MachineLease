@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="data">
+        <item>/小时</item>
+        <item>/月</item>
+        <item>/台班</item>
+        <item>总价</item>
+    </string-array>
+</resources>

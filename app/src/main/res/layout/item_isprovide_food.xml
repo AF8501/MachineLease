@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="53.3dp"
+    android:id="@+id/rl_item_isprovide_food">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tx_item_isprovide_food_name"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="负责食宿"
+            android:textColor="@color/machine_lease_listitem_name"
+            android:textSize="@dimen/machine_lease_listitem" />
+        <com.example.gyx.jixiezulin.widget.SwitchButton.SwitchButton
+            android:layout_width="wrap_content"
+            android:layout_height="23.3dp"
+            android:id="@+id/sw_item_isprovide_food"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            style="@style/SwithcButton"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#d9d9d9"
+        android:layout_alignParentBottom="true">
+    </LinearLayout>
+</RelativeLayout>

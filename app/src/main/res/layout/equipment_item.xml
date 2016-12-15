@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/sectionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginBottom="3dp"
+        android:paddingLeft="14dp"
+        android:background="@color/gray_high_light"
+        android:text="A"
+        android:textColor="@color/equipmentlist_item_sectiontext_normal"
+        android:textSize="10.7sp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/infoRowContainer"
+        android:layout_width="match_parent"
+        android:layout_height="53.3dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:background="@drawable/listitem_selector">
+
+        <TextView
+            android:id="@+id/EquipmentName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textSize="13.3sp"
+            android:textColor="#666666"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

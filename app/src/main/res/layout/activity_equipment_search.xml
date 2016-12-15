@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/content_toolbar"/>
+
+    <include layout="@layout/searchbox_container"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--显示热门搜索和历史搜索-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/hotsearch_container"
+            android:background="@color/colorWhite"
+            android:paddingTop="24dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hotSearch"
+                android:textSize="12sp"
+                android:textColor="#666666"/>
+            <GridView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/gridview_hotSearch"
+                android:layout_marginTop="18dp"
+                android:numColumns="3"
+                android:columnWidth="100.7dp"
+                android:horizontalSpacing="15dp"></GridView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/historySearch"
+                android:textSize="12sp"
+                android:textColor="#666666"
+                />
+            <GridView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/gridview_historySearch"
+                android:layout_marginTop="18dp"
+                android:numColumns="3"
+                android:columnWidth="100.7dp"
+                android:horizontalSpacing="15dp"></GridView>
+        </LinearLayout>
+
+        <!--黑色半透明遮罩-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rl_equipment_search_shade"
+            android:background="@color/black"
+            android:alpha="0.7"
+            android:visibility="gone"></RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

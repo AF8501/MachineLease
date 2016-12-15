@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="equipmentlist_indexScroller_text_current">#fab514</color>
+    <color name="search_shadow">#d4d4d4</color>
+</resources>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">JiXieZuLin</string>
+    <string name="EquipmentActivity_title">设备类型</string>
+    <string name="tx_search_hint">请输入机械类型</string>
+    <string name="hotSearch">热门搜索</string>
+    <string name="historySearch">历史搜索</string>
+    <string name="BrandActivity_title">选择品牌</string>
+    <string name="ModelActivity_title">选择型号</string>
+    <string name="PreviewContractsActivity_title">预览合约</string>
+    <string name="PreviewContracts">预览合约</string>
+    <string name="PostContract">同意合约并发布需求</string>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rl_item_project_description">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:paddingTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tx_item_project_description_name"
+            android:layout_alignParentLeft="true"
+            android:text="工程描述"
+            android:textColor="@color/machine_lease_listitem_name"
+            android:textSize="@dimen/machine_lease_listitem" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tx_item_project_description_content"
+            android:layout_marginTop="8dp"
+            android:hint="请指明工程名称、施工内容、资金来源，并简单描述工程（300字以内）"
+            android:textColorHint="@color/machine_lease_listitem_content_hint"
+            android:textColor="@color/machine_lease_listitem_content"
+            android:textCursorDrawable="@drawable/edit_text_cursor"
+            android:textSize="@dimen/machine_lease_listitem"
+            android:maxLength="300"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#d9d9d9"
+        android:layout_alignParentBottom="true">
+    </LinearLayout>
+</RelativeLayout>

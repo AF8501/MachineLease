@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBlack">
+
+    <include layout="@layout/content_toolbar"/>
+
+    <include layout="@layout/searchbox_container"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/search_shadow"></LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--显示设备类型列表-->
+        <com.example.gyx.jixiezulin.widget.contactList.ContactListViewImpl
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/gray_high_light"
+            android:dividerHeight="0.3dp"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="true"
+            android:headerDividersEnabled="true"
+            android:listSelector="#00000000"
+            android:smoothScrollbar="true" />
+        <!--显示热门搜索和历史搜索-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/hotsearch_container"
+            android:background="@color/colorWhite"
+            android:paddingTop="24dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:visibility="invisible">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hotSearch"
+                android:textSize="12sp"
+                android:textColor="#666666"/>
+            <GridView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/gridview_hotSearch"
+                android:layout_marginTop="18dp"
+                android:numColumns="3"
+                android:columnWidth="100.7dp"
+                android:horizontalSpacing="15dp"></GridView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/historySearch"
+                android:textSize="12sp"
+                android:textColor="#666666"
+                />
+            <GridView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/gridview_historySearch"
+                android:layout_marginTop="18dp"
+                android:numColumns="3"
+                android:columnWidth="100.7dp"
+                android:horizontalSpacing="15dp"></GridView>
+        </LinearLayout>
+
+        <!--黑色半透明遮罩-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rl_equipment_search_shade"
+            android:background="@color/black"
+            android:alpha="0.7"
+            android:visibility="invisible"></View>
+
+    </RelativeLayout>
+
+</LinearLayout>

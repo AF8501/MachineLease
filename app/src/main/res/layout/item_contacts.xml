@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="53.3dp"
+    android:id="@+id/rl_item_contacts">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tx_item_contacts_name"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="联系人"
+            android:textColor="@color/machine_lease_listitem_name"
+            android:textSize="@dimen/machine_lease_listitem" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_item_contacts_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:hint="请填写联系人姓名"
+            android:textColorHint="@color/machine_lease_listitem_content_hint"
+            android:textColor="@color/machine_lease_listitem_content"
+            android:textCursorDrawable="@drawable/edit_text_cursor"
+            android:textSize="@dimen/machine_lease_listitem"
+            android:gravity="right"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#d9d9d9"
+        android:layout_alignParentBottom="true">
+    </LinearLayout>
+</RelativeLayout>
